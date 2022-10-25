@@ -1,0 +1,6 @@
+{
+    // Property 'loginForm' has no initializer and is not definitely assigned in the constructor.ts(2564)
+    // in tsconfig.json
+    // "strictPropertyInitialization": false
+
+}

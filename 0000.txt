@@ -1,0 +1,35 @@
+dotnet ef database update -p Infrastructure -s API  -c StoreContext
+
+dotnet ef migrations Add IdentityInitss -p Infrastructure -s API -o Data/migrations -c StoreContext
+
+dotnet ef migrations remove  -p Infrastructure -s API  -c StoreContext --force
+
+dotnet ef database drop -p Infrastructure -s API  -c StoreContext --force
+
+ng g m account/account-routing --flat
+
+
+
+ npm install bootstrap
+ {
+     node_modules/bootstrap/dist/css/bootstrap.css in the projects->architect->build->styles array,
+node_modules/bootstrap/dist/js/bootstrap.js in the projects->architect->build->scripts array,
+node_modules/bootstrap/dist/js/bootstrap.js in the projects->architect->build->scripts array,
+ }
+ 
+
+ {
+ npm install --save @fortawesome/fontawesome-free
+
+ "./node_modules/@fortawesome/fontawesome-free/css/all.css",
+
+https://github.com/FortAwesome/Font-Awesome/issues/16308
+
+ }
+
+
+{
+    ng add ngx-bootstrap
+}
+
+{npm install -g @angular/cli}
